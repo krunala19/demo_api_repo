@@ -1,0 +1,25 @@
+name: modus_loyalty_mobile_api
+description: "A new Flutter package project."
+version: 0.0.1
+
+environment:
+  sdk: ">=3.2.4 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  shared_preferences: ^2.2.2
+  json_annotation: ^4.8.1
+  http: ^1.1.2
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.8
+  json_serializable: ^6.0.0
+
+flutter:
