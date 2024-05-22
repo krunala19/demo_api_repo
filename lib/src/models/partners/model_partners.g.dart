@@ -1,0 +1,83 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'model_partners.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+MLMApiModelPartner _$MLMApiModelPartnerFromJson(Map<String, dynamic> json) =>
+    MLMApiModelPartner(
+      id: (json['id'] as num?)?.toInt(),
+      dateEntered: json['date_entered'] as String?,
+      categoryId: (json['category_id'] as num?)?.toInt(),
+      type: json['type'] as String?,
+      batch: json['batch'],
+      oib: json['oib'],
+      name: json['name'] as String?,
+      email: json['email'],
+      address: json['address'] as String?,
+      city: json['city'] as String?,
+      country: json['country'] as String?,
+      phone: json['phone'] as String?,
+      web: json['web'] as String?,
+      workingHours: json['workingHours'],
+      instagram: json['instagram'],
+      facebook: json['facebook'],
+      twitter: json['twitter'],
+      linkedin: json['linkedin'],
+      youtube: json['youtube'],
+      cashbackCash: json['cashbackCash'],
+      cashbackCashText: json['carshback_cash_text'] as String?,
+      cashbackCard: json['cashbackCard'],
+      cashbackBasic: (json['cashbackBasic'] as num?)?.toInt(),
+      cashbackPremium: (json['cashbackPremium'] as num?)?.toInt(),
+      benefitText: json['benefit_text'] as String?,
+      shortText: json['short_text'] as String?,
+      logoUrl: json['logo_url'] as String?,
+      pointsPeriod: json['pointsPeriod'],
+      geoLat: json['geo_lat'] as String?,
+      geoLng: json['geo_lng'] as String?,
+      loyaltyStatus: json['loyalty_status'] as String?,
+      status: (json['status'] as num?)?.toInt(),
+      validFrom: json['valid_from'] as String?,
+      validTo: json['valid_to'] as String?,
+    );
+
+Map<String, dynamic> _$MLMApiModelPartnerToJson(MLMApiModelPartner instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'date_entered': instance.dateEntered,
+      'category_id': instance.categoryId,
+      'type': instance.type,
+      'batch': instance.batch,
+      'oib': instance.oib,
+      'name': instance.name,
+      'email': instance.email,
+      'address': instance.address,
+      'city': instance.city,
+      'country': instance.country,
+      'phone': instance.phone,
+      'web': instance.web,
+      'workingHours': instance.workingHours,
+      'instagram': instance.instagram,
+      'facebook': instance.facebook,
+      'twitter': instance.twitter,
+      'linkedin': instance.linkedin,
+      'youtube': instance.youtube,
+      'cashbackCash': instance.cashbackCash,
+      'carshback_cash_text': instance.cashbackCashText,
+      'cashbackCard': instance.cashbackCard,
+      'cashbackBasic': instance.cashbackBasic,
+      'cashbackPremium': instance.cashbackPremium,
+      'benefit_text': instance.benefitText,
+      'short_text': instance.shortText,
+      'logo_url': instance.logoUrl,
+      'pointsPeriod': instance.pointsPeriod,
+      'geo_lat': instance.geoLat,
+      'geo_lng': instance.geoLng,
+      'loyalty_status': instance.loyaltyStatus,
+      'status': instance.status,
+      'valid_from': instance.validFrom,
+      'valid_to': instance.validTo,
+    };
