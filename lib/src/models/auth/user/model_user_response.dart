@@ -25,7 +25,7 @@ class MLMApiModelUser {
   String? address;
   @JsonKey(name: 'house_number')
   String? houseNumber;
-  String? city;
+  String city;
   @JsonKey(name: 'zip_code')
   int? zipCode;
   String? oib;
@@ -142,7 +142,7 @@ class MLMApiModelUser {
     this.sex,
     this.address,
     this.houseNumber,
-    this.city,
+    required this.city,
     this.zipCode,
     this.oib,
     this.idcardNumber,
