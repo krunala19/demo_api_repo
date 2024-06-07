@@ -11,13 +11,13 @@ class MLMApiModelUser {
   DateTime? dateModified;
   String? pan;
   int? pin;
-  String email;
+  String? email;
   @JsonKey(name: 'first_name')
-  String firstName;
+  String? firstName;
   @JsonKey(name: 'middle_name')
   String? middleName;
   @JsonKey(name: 'last_name')
-  String lastName;
+  String? lastName;
   @JsonKey(name: 'cardholder_name')
   String? cardholderName;
   DateTime? birthday;
@@ -25,7 +25,7 @@ class MLMApiModelUser {
   String? address;
   @JsonKey(name: 'house_number')
   String? houseNumber;
-  String city;
+  String? city;
   @JsonKey(name: 'zip_code')
   int? zipCode;
   String? oib;
@@ -74,7 +74,7 @@ class MLMApiModelUser {
   @JsonKey(name: 'was_user')
   String? wasUser;
   @JsonKey(name: 'date_smartphone')
-  DateTime dateSmartphone;
+  DateTime? dateSmartphone;
   @JsonKey(name: 'parent_id')
   String? parentId;
   @JsonKey(name: 'external_id')
@@ -133,60 +133,60 @@ class MLMApiModelUser {
     this.dateModified,
     this.pan,
     this.pin,
-    required this.email,
-    required this.firstName,
+    this.email,
+    this.firstName,
     this.middleName,
-    required this.lastName,
+    this.lastName,
     this.cardholderName,
-    required this.birthday,
-    required this.sex,
-    required this.address,
+    this.birthday,
+    this.sex,
+    this.address,
     this.houseNumber,
-    required this.city,
+    this.city,
     this.zipCode,
     this.oib,
     this.idcardNumber,
-    required this.expires,
-    required this.mobilePhone,
+    this.expires,
+    this.mobilePhone,
     this.fixPhone,
-    required this.moneySpent,
-    required this.totalDiscount,
-    required this.totalTransactions,
-    required this.fuelLiterInThisMonth,
-    required this.familyMembersCount,
-    required this.childrenCount,
+    this.moneySpent,
+    this.totalDiscount,
+    this.totalTransactions,
+    this.fuelLiterInThisMonth,
+    this.familyMembersCount,
+    this.childrenCount,
     this.qualification,
-    required this.extSuglasnost,
-    required this.extSuglasnost2,
+    this.extSuglasnost,
+    this.extSuglasnost2,
     this.registered,
     this.registrationNumber,
-    required this.company,
+    this.company,
     this.companyName,
     this.hash,
     this.favoriteShop,
-    required this.loyaltyStatus,
+    this.loyaltyStatus,
     this.loyaltyStatusOld,
     this.custDiscGroup,
     this.loyaltyStatusInternal,
     this.wasUser,
-    required this.dateSmartphone,
+    this.dateSmartphone,
     this.parentId,
     this.externalId,
     this.barcode,
-    required this.unreadMessages,
-    required this.unreadCoupons,
-    required this.unreadActionsStamps,
-    required this.unreadActionsRewards,
-    required this.unreadActionsPoints,
-    required this.unreadOffers,
-    required this.bodovi,
-    required this.marketing,
-    required this.notificationPhone,
-    required this.notificationEmail,
-    required this.notificationPost,
-    required this.notificationSms,
-    required this.notificationMessage,
-    required this.sendPlasticCard,
+    this.unreadMessages,
+    this.unreadCoupons,
+    this.unreadActionsStamps,
+    this.unreadActionsRewards,
+    this.unreadActionsPoints,
+    this.unreadOffers,
+    this.bodovi,
+    this.marketing,
+    this.notificationPhone,
+    this.notificationEmail,
+    this.notificationPost,
+    this.notificationSms,
+    this.notificationMessage,
+    this.sendPlasticCard,
     this.deviceId,
     this.devicePn,
     this.pension,
@@ -194,7 +194,7 @@ class MLMApiModelUser {
     this.workingStatus,
     this.pets,
     this.onlineShopping,
-    required this.status,
+    this.status,
     this.childData,
   });
 
