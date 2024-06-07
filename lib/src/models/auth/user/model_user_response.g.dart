@@ -28,7 +28,7 @@ MLMApiModelUser _$MLMApiModelUserFromJson(Map<String, dynamic> json) =>
       sex: json['sex'] as String?,
       address: json['address'] as String?,
       houseNumber: json['house_number'] as String?,
-      city: json['city'] as String?,
+      city: json['city'] as String,
       zipCode: (json['zip_code'] as num?)?.toInt(),
       oib: json['oib'] as String?,
       idcardNumber: json['idcard_number'] as String?,
