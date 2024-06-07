@@ -17,10 +17,10 @@ MLMApiModelUser _$MLMApiModelUserFromJson(Map<String, dynamic> json) =>
           : DateTime.parse(json['date_modified'] as String),
       pan: json['pan'] as String?,
       pin: (json['pin'] as num?)?.toInt(),
-      email: json['email'] as String,
-      firstName: json['first_name'] as String,
+      email: json['email'] as String?,
+      firstName: json['first_name'] as String?,
       middleName: json['middle_name'] as String?,
-      lastName: json['last_name'] as String,
+      lastName: json['last_name'] as String?,
       cardholderName: json['cardholder_name'] as String?,
       birthday: json['birthday'] == null
           ? null
@@ -28,7 +28,7 @@ MLMApiModelUser _$MLMApiModelUserFromJson(Map<String, dynamic> json) =>
       sex: json['sex'] as String?,
       address: json['address'] as String?,
       houseNumber: json['house_number'] as String?,
-      city: json['city'] as String,
+      city: json['city'] as String?,
       zipCode: (json['zip_code'] as num?)?.toInt(),
       oib: json['oib'] as String?,
       idcardNumber: json['idcard_number'] as String?,
@@ -57,7 +57,9 @@ MLMApiModelUser _$MLMApiModelUserFromJson(Map<String, dynamic> json) =>
       custDiscGroup: json['cust_disc_group'] as String?,
       loyaltyStatusInternal: json['loyalty_status_internal'] as String?,
       wasUser: json['was_user'] as String?,
-      dateSmartphone: DateTime.parse(json['date_smartphone'] as String),
+      dateSmartphone: json['date_smartphone'] == null
+          ? null
+          : DateTime.parse(json['date_smartphone'] as String),
       parentId: json['parent_id'] as String?,
       externalId: json['external_id'] as String?,
       barcode: json['barcode'] as String?,
@@ -131,7 +133,7 @@ Map<String, dynamic> _$MLMApiModelUserToJson(MLMApiModelUser instance) =>
       'cust_disc_group': instance.custDiscGroup,
       'loyalty_status_internal': instance.loyaltyStatusInternal,
       'was_user': instance.wasUser,
-      'date_smartphone': instance.dateSmartphone.toIso8601String(),
+      'date_smartphone': instance.dateSmartphone?.toIso8601String(),
       'parent_id': instance.parentId,
       'external_id': instance.externalId,
       'barcode': instance.barcode,
