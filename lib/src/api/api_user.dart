@@ -41,7 +41,7 @@ class MLMApiUser {
 
   /// Update user
   ///
-  static Future<dynamic> updateUser(MLMApiModelUser user) async {
+  static Future<dynamic> updateUser(var user) async {
     return await MLMApiHttpClient.put(
       MLMApi.baseUrl,
       MLMEndpoints.updateUser.path,
