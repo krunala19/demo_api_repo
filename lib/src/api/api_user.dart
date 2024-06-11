@@ -45,7 +45,7 @@ class MLMApiUser {
     return await MLMApiHttpClient.put(
       MLMApi.baseUrl,
       MLMEndpoints.updateUser.path,
-      user.toJson(),
+      user,
     );
   }
 
